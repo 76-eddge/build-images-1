@@ -20,6 +20,7 @@ jobs:
         - cxx-extras-Jammy
         - packaging-utils-Alpine
         - python-latex-Alpine
+        - python-jira
         - java-runtime-Alpine
         - java-runtime-rhel7
         - java-psycopg2-rhel7
