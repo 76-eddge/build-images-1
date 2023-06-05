@@ -26,6 +26,7 @@ jobs:
         - java-psycopg2-rhel7
         - buildtools-rhel7
         - node-custom
+        - golang-custom
 
     steps:
     - uses: actions/checkout@v3
