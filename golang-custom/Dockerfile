@@ -1,6 +1,6 @@
 FROM golang:latest AS deploy
 
-RUN go get \
+RUN go install \
 github.com/forestgiant/sliceutil@v0.0.0-20160425183142-94783f95db6c \
 github.com/gin-gonic/gin@v1.9.0 \
 github.com/swaggo/swag@v1.8.12 \
