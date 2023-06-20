@@ -3,6 +3,8 @@ RUN apk add binutils make libgcc musl-dev gcc linux-headers curl
 
 WORKDIR /opt
 RUN curl -o pgaudit.tar.gz https://github.com/pgaudit/pgaudit/archive/refs/tags/1.3.4.tar.gz
+RUN ls -l pgaudit.tar.gz
+RUN cat pgaudit.tar.gz
 RUN tar -xzf pgaudit.tar.gz && rm pgaudit.tar.gz
 
 WORKDIR /opt/pgaudit-1.3.4
