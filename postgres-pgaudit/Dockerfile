@@ -1,5 +1,5 @@
 FROM postgres:11-alpine AS deploy
-RUN apk add binutils make libgcc musl-dev gcc linux-headers openssl
+RUN apk add binutils make libgcc musl-dev gcc linux-headers openssl-dev
 
 WORKDIR /opt
 RUN wget -O pgaudit.tar.gz https://github.com/pgaudit/pgaudit/archive/refs/tags/1.3.4.tar.gz
