@@ -19,6 +19,7 @@ jobs:
         - cxx-extras-Alpine
         - cxx-extras-Jammy
         - packaging-utils-Alpine
+        - postgres-pgaudit
         - python-latex-Alpine
         - python-jira
         - java-runtime-Alpine
