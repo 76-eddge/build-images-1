@@ -1,2 +1,2 @@
-FROM postgres:11-bookworm AS deploy
-RUN apt update && apt install -y postgresql-15-pgaudit
+FROM postgres:13-bullseye AS deploy
+RUN apt update && apt install -y postgresql-13-pgaudit
