@@ -1,7 +1,7 @@
 FROM registry.access.redhat.com/ubi7/ubi:7.9 as deploy
 RUN yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm
 RUN yum -y update
-RUN yum install -y gcc java-1.8.0-openjdk apr python-devel postgresql11-libs postgresql-devel postgresql-upgrade
+RUN yum install -y gcc java-1.8.0-openjdk apr python-devel postgresql11 postgresql11-libs postgresql-devel
 
 # Sanity check (TODO remove)
 RUN find / | grep pg_isready
