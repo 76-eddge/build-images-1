@@ -3,10 +3,6 @@ RUN yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x
 RUN yum -y update
 RUN yum install -y gcc java-1.8.0-openjdk apr python-devel postgresql11 postgresql11-libs postgresql-devel
 
-# Sanity check (TODO remove)
-RUN find / | grep pg_isready
-# RUN hash pg_isready
-
 RUN curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
 RUN python get-pip.py
 RUN rm get-pip.py
