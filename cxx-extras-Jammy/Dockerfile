@@ -1,5 +1,7 @@
 FROM ubuntu:jammy AS deploy
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update && apt-get install -y build-essential cmake unzip curl wget tar sqlite gcovr
 
 # Compile Boost 1.80
