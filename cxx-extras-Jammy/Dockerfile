@@ -3,12 +3,7 @@ FROM ubuntu:jammy AS deploy
 # Add focal repo so that gcc/g++ 7 can be available
 RUN echo 'deb http://archive.ubuntu.com/ubuntu focal main universe' >> /etc/apt/sources.list
 
-RUN apt-get update && apt-get install -y build-essential cmake unzip curl wget tar sqlite
-
-# Use gcc/g++ 7
-RUN apt-get install -y gcc-7 g++-7
-RUN ln -sf /usr/bin/gcc-7 /usr/bin/gcc
-RUN ln -sf /usr/bin/g++-7 /usr/bin/g++
+RUN apt-get update && apt-get install -y build-essential cmake unzip curl wget tar sqlite gcovr
 
 # Compile Boost 1.80
 WORKDIR /
