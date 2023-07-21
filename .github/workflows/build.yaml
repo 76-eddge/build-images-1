@@ -17,7 +17,7 @@ jobs:
       matrix:
         tag:
         - cxx-extras-Alpine
-        - cxx-extras-Jammy
+        - cxx-extras-Jammy-0
         - packaging-utils-Alpine
         - postgres-pgaudit
         - python-latex-Alpine
