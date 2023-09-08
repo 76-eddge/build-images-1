@@ -21,7 +21,7 @@ jobs:
         - packaging-utils-Alpine
         - postgres-pgaudit
         - python-latex-Alpine
-        - python-jira
+        - python-jira-0
         - java-runtime-Alpine
         - java-runtime-rhel7
         - java-psycopg2-rhel7
