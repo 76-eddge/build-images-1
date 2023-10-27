@@ -25,6 +25,7 @@ jobs:
         - java-runtime-Alpine
         - java-runtime-rhel7
         - java-psycopg2-rhel7
+        - node-18-with-libs
         - buildtools-rhel7
         - golang-custom
 
